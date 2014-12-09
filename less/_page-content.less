@@ -1,54 +1,52 @@
 #welcome {
-  height: 300px;
-  background-color: #191919;
-  color: #fff;
-  position: relative;
-}
-#welcome .btn {
-  margin-top: 16px;
-}
-#welcome .welcome-message {
-  background-color: rgba(3, 3, 3, 0.4);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 30px 40px;
-}
-#welcome .welcome-message strong {
-  font-size: 1.5em;
-  text-transform: uppercase;
-}
-@media (max-width: 991px) {
-  #welcome {
-    background: #191919 url('../img/subway-906x600.jpg') center center no-repeat;
-  }
-}
-@media (min-width: 768px) {
-  #welcome {
-    height: 480px;
-  }
-  #welcome .container {
-    position: relative;
-  }
-  #welcome .welcome-message {
-    right: 20%;
-    bottom: auto;
-  }
-  #welcome .welcome-message strong {
-    display: block;
-  }
-}
-@media (min-width: 992px) {
-  #welcome {
-    height: 540px;
-    background: #191919 url('../img/kamrul.jpg') center center no-repeat fixed;
-    -webkit-backgroung-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  #welcome .welcome-message {
-    right: 50%;
-  }
+	height: 300px;
+	background-color: #191919;
+	color: #fff;
+	.btn	{
+		margin-top: 16px;
+	}
+	
+	position: relative;
+	.welcome-message	{
+		background-color: hsla(0,0,1%,0.4);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 30px 40px;
+			strong	{
+				font-size: 1.5em;
+				text-transform: uppercase
+			}
+	}
+	
+	@media(max-width: @screen-sm-max)	{
+		background: #191919 url('../img/kamrul-mid.jpg') center center no-repeat fixed;
+	}
+	@media(min-width: @screen-sm-min)	{
+		height: 480px;
+		.container	{
+			position: relative;
+		}
+		.welcome-message	{
+			right: 20%;
+			bottom: auto;
+			strong	{
+				display: block;
+			}
+		}
+	}
+	
+	@media(min-width: @screen-md-min)	{
+		height: 650px;
+		background: #191919 url('../img/kamrul-big.jpg') center center no-repeat fixed;
+		-webkit-backgroung-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		
+		.welcome-message	{
+			right: 50%;
+		}
+	}
 }
