@@ -40,7 +40,7 @@
 	
 	@media(min-width: @screen-md-min)	{
 		height: 650px;
-		background: #191919 url('../img/kamrul-big.jpg') center center no-repeat fixed;
+		background: #191919 url('../img/kamrul.jpg') center center no-repeat fixed;
 		-webkit-backgroung-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
@@ -48,5 +48,111 @@
 		.welcome-message	{
 			right: 50%;
 		}
+	}
+}
+
+// About section
+#about	{
+	.about-item	{
+		@media (max-width: @screen-xs-max)	{
+			max-width: 320px;
+		.center-block();
+		}
+		text-align: center;
+		padding: 20px;
+		height: 270px;
+		.icon	{
+			font-size: 90px;
+		}
+	}
+}
+
+// Impact Section
+#impact {
+	.hreview {
+	  position: relative;
+	  padding: 0 10px;
+	  border: none;
+	}
+  .caption {
+    position: absolute;
+    top: auto;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+    line-height: 1.1;
+    background: hsla(0,0,10%,0.55);
+    blockquote,
+  	.reviewer {
+      margin: 0 6px;
+      padding: 0;
+    }
+    blockquote {
+	    margin-top: 4px;
+	    border: none;
+	    font-family: @font-family-serif;
+	    font-size: @font-size-large;
+	    color: #fff;
+	  }
+	  .reviewer {
+	    margin-top: 2px;
+	    margin-bottom: 4px;
+	    text-align: right;
+	    color: @gray-lighter;
+	  }
+	}
+	.review-item-1 .caption {
+	  top: 0;
+	  left: 10px;
+	  right: 20%;
+	  bottom: auto;
+	}
+	.review-item-2 .caption {
+	  top: auto;
+	  left: 10px;
+	  right: 17%;
+	  bottom: 0;
+	}
+	.review-item-3 .caption {
+	  top: auto;
+	  left: 17%;
+	  right: 10px;
+	  bottom: 0;
+	}
+	.review-item-4 .caption {
+    top: 0;
+    left: 62%;
+    right: 10px;
+    bottom: auto;
+    .reviewer {
+      margin-top: 6px;
+      text-align: left;
+    }
+  }
+  .review-item-5 .caption {
+    top: 0;
+    left: 17%;
+    right: 10px;
+    bottom: auto;
+  }
+	.review-item-6 .caption {
+	  top: 0;
+	  left: 10px;
+	  right: 63%;
+	  bottom: auto;
+	  .reviewer {
+	    margin-top: 6px;
+	    text-align: left;
+	  }
+	}
+	.review-item-7 .caption {
+	  top: 0;
+	  left: 62%;
+	  right: 10px;
+	  bottom: auto;
+	  .reviewer {
+	    margin-top: 6px;
+	    text-align: left;
+	  }
 	}
 }

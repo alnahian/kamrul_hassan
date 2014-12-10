@@ -6338,7 +6338,7 @@ button.close {
 @media (min-width: 992px) {
   #welcome {
     height: 650px;
-    background: #191919 url('../img/kamrul-big.jpg') center center no-repeat fixed;
+    background: #191919 url('../img/kamrul.jpg') center center no-repeat fixed;
     -webkit-backgroung-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -6346,6 +6346,108 @@ button.close {
   #welcome .welcome-message {
     right: 50%;
   }
+}
+#about .about-item {
+  text-align: center;
+  padding: 20px;
+  height: 270px;
+}
+@media (max-width: 767px) {
+  #about .about-item {
+    max-width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#about .about-item .icon {
+  font-size: 90px;
+}
+#impact .hreview {
+  position: relative;
+  padding: 0 10px;
+  border: none;
+}
+#impact .caption {
+  position: absolute;
+  top: auto;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  line-height: 1.1;
+  background: rgba(26, 26, 26, 0.55);
+}
+#impact .caption blockquote,
+#impact .caption .reviewer {
+  margin: 0 6px;
+  padding: 0;
+}
+#impact .caption blockquote {
+  margin-top: 4px;
+  border: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #fff;
+}
+#impact .caption .reviewer {
+  margin-top: 2px;
+  margin-bottom: 4px;
+  text-align: right;
+  color: #eeeeee;
+}
+#impact .review-item-1 .caption {
+  top: 0;
+  left: 10px;
+  right: 20%;
+  bottom: auto;
+}
+#impact .review-item-2 .caption {
+  top: auto;
+  left: 10px;
+  right: 17%;
+  bottom: 0;
+}
+#impact .review-item-3 .caption {
+  top: auto;
+  left: 17%;
+  right: 10px;
+  bottom: 0;
+}
+#impact .review-item-4 .caption {
+  top: 0;
+  left: 62%;
+  right: 10px;
+  bottom: auto;
+}
+#impact .review-item-4 .caption .reviewer {
+  margin-top: 6px;
+  text-align: left;
+}
+#impact .review-item-5 .caption {
+  top: 0;
+  left: 17%;
+  right: 10px;
+  bottom: auto;
+}
+#impact .review-item-6 .caption {
+  top: 0;
+  left: 10px;
+  right: 63%;
+  bottom: auto;
+}
+#impact .review-item-6 .caption .reviewer {
+  margin-top: 6px;
+  text-align: left;
+}
+#impact .review-item-7 .caption {
+  top: 0;
+  left: 62%;
+  right: 10px;
+  bottom: auto;
+}
+#impact .review-item-7 .caption .reviewer {
+  margin-top: 6px;
+  text-align: left;
 }
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
