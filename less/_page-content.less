@@ -68,7 +68,7 @@ body {
 	
 	@media(min-width: @screen-md-min)	{
 		height: 650px;
-		background: #191919 url('../img/kamrul-big.jpg') center center no-repeat fixed;
+		background: #191919 url('../img/kamrul.jpg') center center no-repeat fixed;
 		-webkit-backgroung-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
@@ -88,6 +88,22 @@ body {
 		.icon	{
 			font-size: 90px;
 		}
+		@media (max-width: @screen-xs-max)	{
+			max-width: 320px;
+			.center-block();
+		}
+	}
+}
+
+// Portfolio section
+#portfolio	{
+		p	{
+		text-align: justify;
+		}
+	.img-rounded	{
+		text-align: center;
+		padding: 20px;
+		height: 270px;
 		@media (max-width: @screen-xs-max)	{
 			max-width: 320px;
 			.center-block();
@@ -206,5 +222,36 @@ body {
 			max-width: 400px;
 			.center-block();
 		}
+	}
+}
+
+// Contact section
+#contact	{
+	background: #213438;
+	#contact-h1	{
+		color: #fff;
+	}
+	.contact-element-1	{
+		p	{
+			color: #fff;
+			text-align: justify;
+		}
+	}
+	.contact-element-2	{
+	p	{
+			color: #fff;
+			text-align: justify;
+		}
+	}
+}
+
+// Footer section
+footer	{
+	height: 50px;
+	text-align: center;
+	#copyright	{
+		padding-top: 15px;
+		color: #213438;
+		font-weight: bold;
 	}
 }
